@@ -45,7 +45,7 @@
           <figure class="avatar-box">
             <img
               src="./assets/images/nacho.png"
-              alt="Richard hanrick"
+              alt="Nacho Acedo"
               width="80"
             />
           </figure>
@@ -53,7 +53,7 @@
           <div class="info-content">
             <h1 class="name">Nacho Acedo</h1>
 
-            <p class="title">Web developer</p>
+            <p class="title">web developer</p>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
@@ -160,15 +160,7 @@
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Log</button>
-            </li>
-
-            <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Projects</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Reflections</button>
             </li>
 
             <li class="navbar-item">
@@ -188,7 +180,7 @@
 
           <section class="about-text">
             <p>
-              Dedicated full-stack web development student with a passion for
+              Dedicated full-stack web developer , student with a passion for
               crafting robust and elegant web solutions. My journey in the world
               of coding has been a fulfilling one, and committed to honing my
               skills to create impactful web experiences.
@@ -495,7 +487,7 @@
             <ul class="clients-list has-scrollbar">
               <li class="clients-item">
                 <a href="#">
-                  <img src="./assets/images/apple.png" alt="client logo" />
+                  <img src="./assets/images/apple.png" alt="client logo"/>
                 </a>
               </li>
 
@@ -532,11 +524,10 @@
           </section>
         </article>
 
-        <!--
+        <!-- 
         - #Log
-      -->
 
-        <article class="resume" data-page="log">
+        <!-- <article class="resume" data-page="log">
           <header>
             <h2 class="h2 article-title">Log</h2>
           </header>
@@ -750,7 +741,7 @@
               </li>
             </ul>
           </section>
-        </article>
+        </article> -->
 
         <!--
         - #PORTFOLIO
@@ -768,15 +759,20 @@
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>DWEC</button>
+                <button data-filter-btn>JavaScript</button>
+              </li>
+              
+              <li class="filter-item">
+                <button data-filter-btn>PHP</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>DIW</button>
+                <button data-filter-btn>CSS</button>
               </li>
 
+
               <li class="filter-item">
-                <button data-filter-btn>DWES</button>
+                <button data-filter-btn>SQL</button>
               </li>
             </ul>
 
@@ -797,15 +793,19 @@
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>DWEC</button>
+                  <button data-select-item>JavaScript</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>DIW</button>
+                  <button data-select-item>PHP</button>
                 </li>
 
-                <li class="select-item">
-                  <button data-select-item>DWES</button>
+                <li class="filter-item">
+                  <button data-filter-btn>CSS</button>
+                </li>
+
+                <li class="filter-item">
+                  <button data-filter-btn>SQL</button>
                 </li>
               </ul>
             </div>
@@ -814,7 +814,7 @@
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="dwec"
+                data-category="javascript"
               >
                 <a href="https://github.com/nacedodev/challenges/tree/main">
                   <figure class="project-img">
@@ -831,38 +831,41 @@
 
                   <h3 class="project-title">JS Challenges</h3>
 
-                  <p class="project-category">DWEC</p>
+                  <p class="project-category">JavaScript</p>
                 </a>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="diw"
+                data-category="javascript php sql css"
+                style="filter: drop-shadow(0 0 0.4em hsl(45, 100%, 72%))"
               >
-                <a href="http://00.2daw.esvirgua.com/DIW/impactoWeb/">
+                <a href="https://00.2daw.esvirgua.com/culturalChain/src/">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="./assets/images/impactWeb.png"
-                      alt="orizon"
+                      src="./assets/images/view.png"
+                      alt="fundo"
                       loading="lazy"
+                      width="220px"
+                      height="260px"
                     />
                   </figure>
 
-                  <h3 class="project-title">Web Impact</h3>
+                  <h3 class="project-title">Cultural Chain</h3>
 
-                  <p class="project-category">DIW</p>
+                  <p class="project-category">JavaScript , PHP , CSS , SQL</p>
                 </a>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="dwes"
+                data-category="php sql"
               >
                 <a href="http://00.2daw.esvirgua.com/DWES/1.arrayImagenes/V2/">
                   <figure class="project-img">
@@ -879,14 +882,38 @@
 
                   <h3 class="project-title">Images Array</h3>
 
-                  <p class="project-category">DWES</p>
+                  <p class="project-category">PHP , SQL</p>
                 </a>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="dwec"
+                data-category="php sql"
+              >
+                <a href="https://00.2daw.esvirgua.com/DWES/PR_JESUITAS/index.html">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/jesuitas.png"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Admin Panel</h3>
+
+                  <p class="project-category">PHP , SQL</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="javascript css"
               >
                 <a href="http://00.2daw.esvirgua.com/DWEC/ipInfoFetcher/">
                   <figure class="project-img">
@@ -903,14 +930,14 @@
 
                   <h3 class="project-title">IP Info Fetcher</h3>
 
-                  <p class="project-category">DWEC</p>
+                  <p class="project-category">JavaScript , CSS</p>
                 </a>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="dwec"
+                data-category="javascript css"
               >
                 <a href="https://nacedodev.github.io/starbound/">
                   <figure class="project-img">
@@ -927,88 +954,12 @@
 
                   <h3 class="project-title">Starbound</h3>
 
-                  <p class="project-category">DWEC</p>
+                  <p class="project-category">JavaScript , CSS</p>
                 </a>
               </li>
             </ul>
           </section>
         </article>
-
-        <!--
-        - #BLOG
-      -->
-          <!-- TODO -->
-        <article class="blog" data-page="reflections">
-          <header>
-            <h2 class="h2 article-title">Reflections</h2>
-          </header>
-
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li
-                class="blog-post-item"
-                style="margin-top: 30px"
-                style="background-color: rgba(240, 248, 255, 0)"
-              >
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/read.png"
-                      alt="Daniel lewis"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Begin
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      "The journey has started, and I look forward to doing my
-                      best this year."
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="blog-post-item" style="margin-top: 30px">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/read.png"
-                      alt="Daniel lewis"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Pressure
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      "This week has been very demanding. I need to learn how to
-                      manage pressure better."
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #CONTACT
-      -->
 
         <article class="contact" data-page="contact">
           <header>
@@ -1032,7 +983,7 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form action="./assets/admin/mail.php" class="form" method="post">
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -1061,7 +1012,7 @@
                 data-form-input
               ></textarea>
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
+              <button class="form-btn" type="submit"  data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
               </button>
