@@ -4,19 +4,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = 'nacedo.dev@gmail.com'; // Tu dirección de correo electrónico
-    $subject = 'Portfolio contact form';
-    $body = "$fullname\n\n\n$message";
+    $to = 'nacedo.dev@gmail.com'; 
+    $subject = 'Formulario de contacto';
 
-    // Encabezados adicionales
+    // Formato HTML para el correo
+    $body = "<html><body><h2 style='font-size: 18px;'>Nombre: <strong>$fullname</strong></h2><p>Mensaje: $message</p></body></html>";
+
+    // Encabezados adicionales para correo HTML
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
     // Envío del correo con los encabezados adicionales
-    mail($to, $subject, $body, $headers);
-
-    header('Location: ../../index.html');
+    $mail = mail($to, $subject, $body, $headers);
+    // Verifica si el correo se envió correctamente
+    if ($mail) {
+        // Redireccionar después de enviar el correo
+        header('Location: ../../index.html');
+    }
 }
 ?>
