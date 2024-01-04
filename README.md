@@ -16,7 +16,7 @@
 </h3>
 
 <p align="center">
-  <img src="assets/images/preview.png" width="200px" alt="preview">
+  <img src="assets/images/preview.png" width="90%" alt="preview">
 </p>
 
 
